@@ -97,7 +97,7 @@ class NewsAtlasActivity : AppCompatActivity(), ImageArticleView.ImageDraggedList
         val imageList = ArrayList<ImageBean>()
 
         for(i in 0..30){
-            val data = ImageBean("http://imp.qumitech.com/0006f46d-3fcb-4374-bab3-ddd4e5b2d8ee_avatar.jpg")
+            val data = ImageBean("https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1564737106&di=3d2167c8e66c77e44c8ba2e976aab268&src=http://ac-r.static.booking.cn/images/hotel/max1024x768/987/98767654.jpg")
             imageList.add(data)
         }
         vpAdapter = VPCommonViewAdapter(this,imageList,this)

@@ -93,6 +93,9 @@ class InputActivity : AppCompatActivity() {
                 ifCurrentShowKeyBoard = true
             }
         }
+
+
+        _input_activity_input_et.requestFocus()
     }
 
 
