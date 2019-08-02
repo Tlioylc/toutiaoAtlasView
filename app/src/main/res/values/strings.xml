@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DemoTouTiao</string>
+
+    <string name="news_comment_input_hint">我来说两句…</string>
+</resources>

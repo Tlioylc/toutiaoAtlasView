@@ -1,0 +1,10 @@
+<resources>
+
+    <style name="ImageTranslucentTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="windowNoTitle">true</item>
+
+
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+</resources>

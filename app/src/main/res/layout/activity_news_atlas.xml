@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.livelihood.client.module.widget.imagearticle.ImageVp
+        android:id="@+id/_news_atlas_activity_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#000000"/>
+
+
+    <com.livelihood.client.module.widget.imagearticle.TextArticleView
+        android:id="@+id/_text_article_view"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"/>
+    <RelativeLayout
+        android:id="@+id/_news_atlas_activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/_news_atlas_activity_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="14dp"
+            android:paddingEnd="1dp"
+            android:layout_alignTop="@+id/_news_atlas_activity_avatar"
+            android:layout_alignBottom="@+id/_news_atlas_activity_avatar"
+            android:src="@mipmap/ic_common_back_white"/>
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/_news_atlas_activity_avatar"
+            android:layout_toEndOf="@+id/_news_atlas_activity_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:src="@mipmap/ic_launcher"
+            android:background="@color/grey_E6E6E6"
+            app:sriv_oval="true"/>
+
+        <TextView
+            android:id="@+id/_news_atlas_activity_usr_name"
+            android:layout_toEndOf="@+id/_news_atlas_activity_avatar"
+            android:layout_marginStart="6dp"
+            android:layout_alignTop="@+id/_news_atlas_activity_avatar"
+            android:includeFontPadding="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="君子如玉"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:layout_alignStart="@+id/_news_atlas_activity_usr_name"
+            android:layout_below="@+id/_news_atlas_activity_usr_name"
+            android:layout_marginTop="1dp"
+            android:includeFontPadding="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今天03:45"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            />
+    </RelativeLayout>
+
+    <com.tlioylc.demotoutiao.widget.NewsCommentComView
+        android:id="@+id/_news_atlas_activity_bottom_view"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
